@@ -168,7 +168,7 @@ function SavingsDetail() {
       })}`,
     },
     {
-      title: `Earnings ${earnToken}`,
+      title: `Earnings`,
       value: `${formattedEarnings}`,
     },
   ];
