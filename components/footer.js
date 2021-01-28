@@ -19,7 +19,7 @@ export default function Footer() {
       title: "MasterChef Contract",
       link: "https://etherscan.io/address/0x7f7710e0c7c5c0ff043963dd22c3988e8bdb7acc",
     },
-    { title: "Github", link: "#" },
+    { title: "Github", link: "https://github.com/Genesis-Farming" },
     { title: "Twitter", link: "https://twitter.com/GenesisMining" },
     { title: "Medium", link: "#" },
     
