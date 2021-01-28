@@ -168,7 +168,7 @@ function SavingsDetail() {
       })}`,
     },
     {
-      title: `Earnings`,
+      title: `Earnings GT`,
       value: `${formattedEarnings}`,
     },
   ];
