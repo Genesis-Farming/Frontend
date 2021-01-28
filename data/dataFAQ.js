@@ -32,61 +32,14 @@ export default [
       "Between January 8 and April 30, a team of six engineers reviewed and formally verified crucial components of the smart contracts for Genesis Farming.Their past work includes smart contract development on and formal verification of multi-collateral DAI.The scope of work includes: Formal verification of the core smart contracts, code review of core smart contracts, numerical error analysis, code review of periphery smart contracts (during ongoing development).",
   },
   {
-    question: "Est-ce que mon application sera 'native'?",
+    question: "Supporting meta transactions",
     answer:
-      "Oui, nous ne pensons pas que les applications dites 'hybrides' soient d'une qualité suffisante pour offrir la meilleure expérience posssible à vos utilisateurs. C'est pourquoi nous utilisons un rendu 'natif' qui offre la même qualité qu'Instagram, Pinterest, Facebook, ...",
+      "All Uniswap V2 pool tokens support meta-transaction approvals via the permit function. This obviates the need for a blocking approve transaction before programmatic interactions with pool tokens can occur. ERC-712 In vanilla ERC-20 token contracts, owners may only register approvals by directly calling a function which uses msg.sender to permission itself. With meta-approvals, ownership and permissioning are derived from a signature passed into the function by the caller (sometimes referred to as the relayer). Because signing data with Ethereum private keys can be a tricky endeavor, Uniswap V2 relies on ERC-712, a signature standard with widespread community support, to ensure user safety and wallet compatibility.",
   },
   {
     question:
-      "Est-ce que mon projet pourra accueillir des milliers/millions d'utilisateurs?",
+      "Minimum Liquidity",
     answer:
-      "Oui, nous pensons la structure de votre application dès le début pour qu'elle puisse s'adapter à une forte croissance sans perte de performances.",
-  },
-  {
-    question: "Comment est-ce que je pourrai gérer mon projet?",
-    answer:
-      "Nous livrons nos clients avec une solution clé en main qui leur permet de consulter les statistiques principales de leur projet (revenus, utilisateus actifs, fidélisation, géolocalisation des utilisateurs, ...), d'envoyer des notifications personnalisées, de modérer les comportements inadaptés mais aussi de gérer leurs campagnes marketing.",
-  },
-  {
-    question: "Combien coûte l'hébergement?",
-    answer:
-      "Pour démarrer, comptez vingt cinq euros mensuels pour plusieurs dizaines de milliers d'utilisateurs. Ensuite, vous payez à l'utilisation, le prix est toujours insignifiant par rapport aux revenus générés.",
-  },
-  {
-    question: "Combien coûtent les modifications?",
-    answer:
-      "Nous ne facturons pas les changements mineurs (moins de deux heures de travail). Pour les nouvelles fonctionnalités plus complexes, le prix dépend du nombre de jours de travail. Vous pouvez demander un devis gratuit à votre chef de projet.",
-  },
-  {
-    question:
-      "Que faites-vous pour assurer la sécurité et la confidentialité de mon projet?",
-    answer:
-      "Tout d'abord, votre code source est stocké sur notre outil interne crypté. Les équipes ont accès au code uniquement pendant la durée de leur mission. Les salariés qui ne travaillent pas sur votre projet n'ont même pas connaissance de son existence.",
-  },
-  {
-    question: "Est-ce que mon application risque de se faire pirater?",
-    answer:
-      "Le risque zéro n'existe pas. Cependant, tout est mis en place pour éviter toute tentative de piratage: le code est passé au peigne fin avant chaque mise en production pour s'assurer de l'absence de failles et des règles de sécurité analysent chaque accès à votre base de donnée pour évaluer les risques. Pour nos clients dans la finance (et les cryptomonnaies) nous mettons en place l'identification biométrique, l'authentification à deux facteurs et l'utilisation d'un PIN à quatre caractères avant chaque transaction.",
-  },
-  {
-    question: "Combien d'années d'expérience ont vos développeurs?",
-    answer:
-      "Nos développeurs ont tous au minimum 10 ans d'expérience en développement.",
-  },
-  {
-    question: "Est-ce que vous allez sous-traiter mon projet?",
-    answer:
-      "Non, votre projet est réalisé intégralement en interne à Bordeaux par nos équipes. Il n'y a aucune sous-traitance.",
-  },
-  {
-    question: "Est-ce que je suis 100% propriétaire du code source?",
-    answer:
-      "Oui, le contrat signé en début de mission stipule noir sur blanc que nous vous cédons l'intégralité de la propriété intellectuelle sur le projet.",
-  },
-  {
-    question:
-      "Est-ce que vous proposez une assistance à la création d'entreprise?",
-    answer:
-      "Oui, votre chef de projet dédié répondra gratuitement à toutes vos questions concernant le choix des statuts, les meilleurs outils (banque, comptabilité, ...) et les aides de l'état qui vous sont disponibles.",
+      "To ameliorate rounding errors and increase the theoretical minimum tick size for liquidity provision, pairs burn the first MINIMUM_LIQUIDITY pool tokens. For the vast majority of pairs, this will represent a trivial value. The burning happens automatically during the first liquidity provision, after which point the totalSupply is forevermore bounded.",
   },
 ];
