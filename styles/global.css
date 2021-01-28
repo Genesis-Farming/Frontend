@@ -1,0 +1,433 @@
+/* Global CSS */
+body {
+  background-color: #f7f7f7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0px;
+  margin: 0px;
+}
+
+.wrapper {
+  padding-top: 100px;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Text */
+
+h1,
+h2,
+h3,
+h4,
+p,
+input,
+textarea,
+select {
+  font-family: "Inter", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  transition: 0.3s;
+  color: #07184a;
+}
+
+h1 {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-weight: 900;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 2;
+}
+
+p.drop-cap:first-letter {
+  font-size: 68px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  float: left;
+  margin-right: 8px;
+  line-height: 0.89286;
+}
+
+.italic_p {
+  color: #898989;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+label p {
+  color: #767b88;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  font-size: 14px;
+  width: 92%;
+  padding: 4%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  resize: none;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e0e6f1;
+  border-radius: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 20px;
+}
+
+select {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* remove default arrow */
+}
+
+textarea {
+  height: 150px;
+}
+
+.dual_input {
+  width: 42%;
+  margin-right: 3%;
+}
+
+.dual_input:nth-child(2n) {
+  margin-right: 0%;
+}
+
+/* Gestion des animations */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20%, 0);
+    transform: translate3d(0, -20%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20%, 0);
+    transform: translate3d(0, -20%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Gestion des boutons */
+button {
+  z-index: 200;
+  padding: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #1b46c2;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+button p {
+  font-size: 15px;
+  color: #fff;
+}
+
+.secondaryButton {
+  background-color: rgba(27, 70, 194, 0.1);
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* Structure */
+.fullBloc {
+  width: 100%;
+}
+
+.halfBloc {
+  width: 50%;
+}
+
+.container {
+  max-width: 1000px;
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.containerRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.containerSpaceBetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerCenter {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerItem {
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e0e6f1;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.containerErrorMessage {
+  z-index: 300;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -125px;
+  width: 250px;
+  background-color: red;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.containerErrorMessage p {
+  color: "white";
+}
+
+.imageFit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Les assets vectos */
+.vecto_asset {
+  z-index: -1;
+  position: absolute;
+  right: 0px;
+  top: 94px;
+  transition: 0.3s;
+  width: 600px;
+}
+
+/* Animation des assets */
+.float_anim {
+  animation: float 5s infinite;
+  /* change le délai de début de l'animation */
+  animation-delay: 0.5s;
+  animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
+  transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-20px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+/* Carousel */
+.slick-list {
+  overflow: visible !important;
+}
+
+.slick-slide {
+  margin-right: 100px;
+}
+
+/* Misc */
+.defaultShadows {
+  -webkit-box-shadow: 0px 11px 53px -12px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 11px 53px -12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 11px 53px -12px rgba(0, 0, 0, 0.1);
+}
+
+.defaultIconContainerSize {
+  width: 40px;
+  height: 40px;
+}
+
+.defaultIconSize {
+  width: 50%;
+  height: 50%;
+}
+
+.separatorHorizontal {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(27, 70, 194, 0.1);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1250px) {
+  h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 2;
+  }
+
+  .container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  /* UI */
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  button p {
+    font-size: 15px;
+  }
+
+  .fullBloc {
+    border-radius: 0px;
+  }
+
+  .halfBloc {
+    width: 100%;
+  }
+
+  .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .containerRow:not(.notResponsive),
+  .containerSpaceBetween:not(.notResponsive) {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  /* UI */
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 33px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  button p {
+    font-size: 12px;
+  }
+
+  .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

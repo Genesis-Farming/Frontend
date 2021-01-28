@@ -1,0 +1,110 @@
+{
+  "./dev/noop": [
+    {
+      "id": "./node_modules/next/dist/client/dev/noop.js",
+      "file": "static/chunks/5.js"
+    }
+  ],
+  "./fortmatic-083107e5.js": [
+    {
+      "id": "./node_modules/use-wallet/dist/fortmatic-083107e5.js",
+      "file": "static/chunks/7.js"
+    }
+  ],
+  "./index-465d2d1c.js": [
+    {
+      "id": "./node_modules/use-wallet/dist/_crypto_commonjs-external-8b32930c.js",
+      "file": "static/chunks/2.js"
+    },
+    {
+      "id": "./node_modules/use-wallet/dist/index-465d2d1c.js",
+      "file": "static/chunks/2.js"
+    },
+    {
+      "id": "./node_modules/use-wallet/dist/index-bc4c198a.js",
+      "file": "static/chunks/2.js"
+    },
+    {
+      "id": "./node_modules/use-wallet/dist/subscriptionManager-39f2bcea.js",
+      "file": "static/chunks/2.js"
+    }
+  ],
+  "./index-53cdd08b.js": [
+    {
+      "id": "./node_modules/use-wallet/dist/_crypto_commonjs-external-8b32930c.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/use-wallet/dist/_url_commonjs-external-ca765683.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/use-wallet/dist/index-53cdd08b.js",
+      "file": "static/chunks/3.js"
+    }
+  ],
+  "./index-6329c83f.js": [
+    {
+      "id": "./node_modules/use-wallet/dist/_crypto_commonjs-external-8b32930c.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/use-wallet/dist/index-1d822556.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/use-wallet/dist/index-6329c83f.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/use-wallet/dist/index-bc4c198a.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/use-wallet/dist/subscriptionManager-39f2bcea.js",
+      "file": "static/chunks/1.js"
+    }
+  ],
+  "./index-de390270.js": [
+    {
+      "id": "./node_modules/use-wallet/dist/_crypto_commonjs-external-8b32930c.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/use-wallet/dist/_url_commonjs-external-ca765683.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/use-wallet/dist/index-1d822556.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/use-wallet/dist/index-bc4c198a.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/use-wallet/dist/index-de390270.js",
+      "file": "static/chunks/0.js"
+    },
+    {
+      "id": "./node_modules/use-wallet/dist/subscriptionManager-39f2bcea.js",
+      "file": "static/chunks/0.js"
+    }
+  ],
+  "./torus.cjs-a3af3155.js": [
+    {
+      "id": "./node_modules/use-wallet/dist/index-bc4c198a.js",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./node_modules/use-wallet/dist/torus.cjs-a3af3155.js",
+      "file": "static/chunks/4.js"
+    }
+  ],
+  "squarelink": [
+    {
+      "id": "./node_modules/squarelink/lib/squarelink.min.js",
+      "file": "static/chunks/6.js"
+    }
+  ]
+}
