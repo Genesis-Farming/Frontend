@@ -21,7 +21,7 @@ export default function Footer() {
     },
     { title: "Github", link: "https://github.com/Genesis-Farming" },
     { title: "Twitter", link: "https://twitter.com/GenesisMining" },
-    { title: "Medium", link: "#" },
+    { title: "Medium", link: "https://genesismining.medium.com/" },
     
   ];
 
