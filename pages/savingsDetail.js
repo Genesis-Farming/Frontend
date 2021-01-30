@@ -350,7 +350,7 @@ function SavingsDetail() {
                   marginBottom: isMobileLayout ? 25 : 10,
                 }}
               >
-                <p>Get my reward ({`${formattedEarnings}`}) GT</p>
+                <p>Get my reward ({`${formattedEarnings}`}) UNI</p>
               </button>
             )}
             {!isLoadingQuery && (
