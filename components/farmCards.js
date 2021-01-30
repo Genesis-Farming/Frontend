@@ -124,7 +124,7 @@ export default function FarmCards({ amount = 0 }) {
             <div>
               <p>{name}</p>
               <p style={{ color: ColorGuide.mainGrey }}>{lpToken}</p>
-              <p style={{ color: ColorGuide.mainGrey }}>Earn GT</p>
+              <p style={{ color: ColorGuide.mainGrey }}>Earn UNI</p>
             </div>
           </div>
 
