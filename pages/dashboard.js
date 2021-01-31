@@ -53,7 +53,7 @@ export default function Dashboard() {
 
   const keyIndicatorsList = [
     {
-      title: "Total UNI supply",
+      title: "Total CGT supply",
       value: totalSupply
         ? `${numbro(getBalanceNumber(totalSupply || 0)).format({
             spaceSeparated: true,
@@ -63,7 +63,7 @@ export default function Dashboard() {
         : 0,
     },
     {
-      title: "Your UNI earnings",
+      title: "Your CGT earnings",
       value: `${numbro(getBalanceNumber(genesisTokenBalance || 0)).format({
         spaceSeparated: true,
         thousandSeparated: true,
