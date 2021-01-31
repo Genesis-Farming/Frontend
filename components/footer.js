@@ -22,6 +22,7 @@ export default function Footer() {
     { title: "Github", link: "https://github.com/Genesis-Farming" },
     { title: "Twitter", link: "https://twitter.com/GenesisMining" },
     { title: "Medium", link: "https://genesismining.medium.com/" },
+    { title: "Coingecko", link: "https://www.coingecko.com/fr/pi%C3%A8ces/cache-gold" },
     
   ];
 
