@@ -71,7 +71,7 @@ export const supportedPools = [
     name: "CGT",
     symbol: "CGT-ETH LP",
     tokenSymbol: "CGT",
-    icon: "/tokens/cache-gold-logo.png",
+    icon: "/tokens/CG-300x300.png",
     interestRate: 4780.34,
   },
   {
