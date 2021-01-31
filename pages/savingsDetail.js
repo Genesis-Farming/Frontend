@@ -168,7 +168,7 @@ function SavingsDetail() {
       })}`,
     },
     {
-      title: `Earnings UNI`,
+      title: `Earnings CGT`,
       value: `${formattedEarnings}`,
     },
   ];
